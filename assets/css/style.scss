@@ -2,6 +2,7 @@
 ---
 
 body {
+  // 背景图设置
   background-image: url('https://haowallpaper.com/link//common/file/previewFileImg/19004210188897664');
   background-attachment: fixed;
   background-size: cover;
@@ -11,20 +12,32 @@ body {
   margin: 0;
 }
 
+// 文章内容区域（去掉了遮盖背景的白色，改为透明磨砂玻璃效果）
 .page-content {
-  background-color: rgba(255, 255, 255, 0.9);
+  // 核心改动：删掉了不透明的白色，改为微透明的毛玻璃效果
+  background-color: rgba(255, 255, 255, 0.6); // 透明度从0.9降为0.6，背景图能透出来
+  backdrop-filter: blur(5px); // 增加“毛玻璃”模糊效果，让文字更清晰
+  -webkit-backdrop-filter: blur(5px); // 兼容苹果浏览器
+  
   border-radius: 15px;
   padding: 30px;
   margin: 20px auto;
   max-width: 800px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  // 增加一个：让文字呈深色，因为在透明背景上白字看不见
+  color: #222; 
 }
 
+// 顶部导航栏
 .site-header {
-  background-color: rgba(255, 255, 255, 0.95);
+  // 让顶部导航栏也半透明，透出背景图
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px); // 顶部也加一点毛玻璃效果
+  -webkit-backdrop-filter: blur(5px);
   border-bottom: 3px solid #ff6b9d;
 }
 
+// 链接颜色
 a {
   color: #ff6b9d;
 }
