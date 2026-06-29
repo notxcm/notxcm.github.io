@@ -3,8 +3,7 @@ description: 你好喵，欢迎来到我的个人空间
 theme: minima
 
 
+author: Notxcm
+
 sass:
   sass_dir: _sass
-
-
-author: Notxcm
