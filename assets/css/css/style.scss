@@ -1,16 +1,38 @@
 ---
 ---
 
+// 二次元背景图
 body {
   background-image: url('https://haowallpaper.com/link//common/file/previewFileImg/19004210188897664');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
 }
 
-/* 让文字更清晰 */
+// 让内容区域半透明，方便阅读
 .page-content {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 10px;
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// 头部样式
+.site-header {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 3px solid #ff6b9d;
+}
+
+// 链接颜色（粉色系，更二次元）
+a {
+  color: #ff6b9d;
+}
+
+a:hover {
+  color: #ff8fab;
 }
